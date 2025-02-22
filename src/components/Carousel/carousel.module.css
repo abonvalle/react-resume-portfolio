@@ -1,0 +1,50 @@
+/* CarouselComponent.module.css */
+.carouselImageContainer {
+  cursor: pointer;
+}
+.carouselImageContainer img {
+  transition: transform 0.5s ease;
+}
+
+.carouselImageContainer:hover img {
+  transform: scale(1.1);
+}
+
+.expandedImage {
+  cursor: pointer;
+  height: 80vh;
+  width: auto;
+  transform-origin: 50% 50%;
+  transform: translate(0, 10vh);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 9999;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .expandedImage {
+    width: 80vw;
+    max-width: 1920px;
+    position: fixed;
+  }
+}
+
+.backdrop {
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}

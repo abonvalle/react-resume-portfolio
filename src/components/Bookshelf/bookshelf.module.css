@@ -1,0 +1,122 @@
+/* CarouselComponent.module.css */
+.carouselImageContainer {
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  /* width: auto; */
+}
+
+.bookcoverImgWrapper {
+  width: 370px;
+}
+.carouselImageContainer img {
+  transition: transform 0.5s ease, border 0.5s ease-in-out;
+  height: 350px;
+}
+
+.carouselImageContainer:hover img {
+  transform: scale(1) skew(-0.5deg) !important;
+  border-width: 1px !important;
+}
+
+.expandedImage {
+  cursor: pointer;
+  height: 80vh;
+  width: auto;
+  transform-origin: 50% 50%;
+  transform: translate(0, 10vh);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 9999;
+  object-fit: contain;
+  border-radius: 3px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .carouselImageContainer {
+    flex-wrap: wrap;
+  }
+
+  .expandedImage {
+    width: 80vw;
+    max-width: 1920px;
+    position: fixed;
+  }
+}
+
+.backdrop {
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.bookshelf {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1px;
+}
+
+.booksSides {
+  rotate: -9deg;
+  cursor: pointer;
+  width: 30px;
+  height: 200px;
+  text-align: center;
+  align-content: center;
+  font-size: 10px;
+  writing-mode: vertical-rl;
+  font-weight: bold;
+  /* border: 1px solid #e0e0e0; */
+  border-radius: 2px;
+}
+
+.bookcoverImg {
+  z-index: 999 !important;
+  position: relative !important;
+  height: 300px !important;
+  margin: 0 !important;
+  width: auto !important;
+  transform: scale(0.8) skew(-3deg, -1deg) !important;
+  border: 7px solid #fffffb !important;
+  border-bottom: 5px solid #fffffb !important;
+  border-top: 0 !important;
+  border-left: 0 !important;
+}
+
+.bookInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  gap: 1px;
+  width: 100%;
+}
+
+.bookInfo h1,
+.bookInfo h2 {
+  margin: 0;
+  font-weight: bold;
+}
+.bookInfo h1 {
+  font-size: 1.15rem;
+  margin-bottom: 4px;
+}
+.bookInfo h2 {
+  font-size: 0.85rem;
+}
