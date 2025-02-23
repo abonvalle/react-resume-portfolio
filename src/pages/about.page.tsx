@@ -151,20 +151,6 @@ function AboutPage() {
       </p>
       <hr />
       <h2>{t("bookshelf_title")} 📚</h2>
-      {/* - Clean architecture - Robert C. Martin
-- Clean Code - Robert C. Martin
-- Domain Driven Design - Eric Evans
-- Au coeur de l'intelligence artificielle - Axel Cypel
-- Intelligence artificielle - Melanie Mitchell
-- Intelligence artificielle - Stuart Russell & Peter Norvig
-- Quand la machine apprend - Yann Le Cun */}
-      {/* {
-        url: '/images/ddd.webp',
-        title: 'Domain Driven Design',
-        author: 'Eric Evans',
-        txt: `Concevoir un logiciel de qualité exige des équipes non seulement une expertise technique solide, mais aussi une compréhension approfondie du métier.`,
-        alt: 'Domain Driven Design'
-      }, */}
       <Bookshelf
         images={[
           {
