@@ -1,6 +1,7 @@
 import i18next from "i18next";
 import { Moon, Sun } from "lucide-react";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
@@ -8,6 +9,7 @@ import { LanguageOption, LanguageSelector } from "./components";
 import { ProjectsPage } from "./pages";
 import AboutPage from "./pages/about.page";
 function App() {
+  const { t } = useTranslation();
   const [currentLang, setCurrentLang] = useState(i18next.language);
   const [isDarkMode, setIsDarkMode] = useState(true);
 
@@ -33,10 +35,10 @@ function App() {
           <nav className="flex justify-between items-center text-lg mb-8 pt-8">
             <div className="flex gap-2">
               <NavLink to="/" end>
-                A propos
+                {t("about")}
               </NavLink>
               <NavLink to="/projects" end>
-                Projets
+                {t("projects")}
               </NavLink>
             </div>
             <div className="flex justify-center items-center gap-2">
