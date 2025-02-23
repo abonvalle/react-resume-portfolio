@@ -1,5 +1,4 @@
 {
-  "mainPage": {
-    "introduction": "I am c'est Alexandre Bonvalle, 👨‍💻 Développeur Logiciels avec une passion pour l'innovation technologique et 6 ans d'expérience professionnelle dans le développement de logiciels. 💼 Au fil des années, j'ai acquis une expertise approfondie dans la création d'interfaces utilisateur dynamiques en utilisant le framework Angular. J'apprécie également pouvoir gérer l'intégralité du produit, du backend à la base de données en passant par l'administration serveur ou la gestion du déploiement et de l'intégration. 💡 Je m'intéresse à l'architecture logicielle et au machine learning. A bientôt ! 👋"
-  }
+  "about": "About",
+  "projects": "Projects"
 }

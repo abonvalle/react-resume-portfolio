@@ -1,13 +1,47 @@
+@font-face {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 100 500;
+  font-display: block;
+  src: url(/fonts/Satoshi-Regular.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 600 700;
+  font-display: block;
+  src: url(/fonts/Satoshi-Medium.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 800 900;
+  font-display: block;
+  src: url(/fonts/Satoshi-Bold.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Satoshi";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: block;
+  src: url(/fonts/Satoshi-Italic.woff2) format("woff2");
+  font-named-instance: "Italic";
+}
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  font-family: "Satoshi", system-ui, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-feature-settings: "case" 1, "cpsp" 1, "dlig" 1, "cv01" 1, "cv02",
+    "cv03" 1, "cv04" 1;
+  font-variant: common-ligatures contextual;
+  /* line-height: 1.5; */
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* color-scheme: light dark; */
+  /* color: rgb(209, 213, 219); */
+  /* background-color: 1c1b22; */
 
-  font-synthesis: none;
+  /* font-synthesis: none; */
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -25,12 +59,14 @@ a:hover {
 body {
   margin: 0;
   display: flex;
+  width: 100dvw;
   place-items: center;
-  min-width: 320px;
+  align-items: center;
   min-height: 100vh;
+  /* padding: 0 1rem; */
 }
 
-h1 {
+/* h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
@@ -43,8 +79,49 @@ h2 {
 h3 {
   font-size: 2.4em;
   line-height: 0.8;
+} */
+
+/* body {
+  font-size: 18px;
+  line-height: 1.6;
+} */
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: 1.2;
+  margin-bottom: 16px;
 }
 
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+h5 {
+  font-size: 18px;
+  font-weight: 600;
+}
+h6 {
+  font-size: 16px;
+  font-weight: 600;
+} */
+/* 
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -62,7 +139,7 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 
 @media (prefers-color-scheme: light) {
   :root {

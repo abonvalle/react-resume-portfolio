@@ -1,7 +1,11 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import translationEN from "./locales/en/translation.json";
-import translationFR from "./locales/fr/translation.json";
+import aboutPageTranslationEN from "./en/about-page-translation.json";
+import projectPageTranslationEN from "./en/projects-page-translation.json";
+import translationEN from "./en/translation.json";
+import aboutPageTranslationFR from "./fr/about-page-translation.json";
+import projectPageTranslationFR from "./fr/projects-page-translation.json";
+import translationFR from "./fr/translation.json";
 
 // the translations
 // (tip move them in a JSON file and import them,
@@ -9,9 +13,13 @@ import translationFR from "./locales/fr/translation.json";
 const resources = {
   en: {
     translation: translationEN,
+    about_page_translation: aboutPageTranslationEN,
+    project_page_translation: projectPageTranslationEN,
   },
   fr: {
     translation: translationFR,
+    about_page_translation: aboutPageTranslationFR,
+    project_page_translation: projectPageTranslationFR,
   },
 };
 

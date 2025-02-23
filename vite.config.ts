@@ -17,7 +17,7 @@ export default defineConfig(() => {
     build: {
       rollupOptions: {
         input: {
-          main: resolve(__dirname, "en/index.html"),
+          main: resolve(__dirname, "index.html"),
           ...langsEntrypoints,
         },
       },

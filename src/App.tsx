@@ -1,33 +1,61 @@
+import i18next from "i18next";
+import { Moon, Sun } from "lucide-react";
+import { useState } from "react";
+import { NavLink } from "react-router";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
+import { LanguageOption, LanguageSelector } from "./components";
+import { ProjectsPage } from "./pages";
 import AboutPage from "./pages/about.page";
-
 function App() {
-  // const [count, setCount] = useState(0);
+  const [currentLang, setCurrentLang] = useState(i18next.language);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
+  const langs: LanguageOption[] = [
+    { code: "en", name: "🇬🇧" },
+    { code: "fr", name: "🇫🇷" },
+  ];
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
   return (
-    <>
-      <AboutPage></AboutPage>
-      {/* <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div
+      className={
+        "wrapper prose-lg " + (isDarkMode ? "prose-dark" : "prose-light")
+      }
+    >
+      <div className="content">
+        <Router>
+          <nav className="flex justify-between items-center text-lg mb-8 pt-8">
+            <div className="flex gap-2">
+              <NavLink to="/" end>
+                A propos
+              </NavLink>
+              <NavLink to="/projects" end>
+                Projets
+              </NavLink>
+            </div>
+            <div className="flex justify-center items-center gap-2">
+              <button
+                className="cursor-pointer"
+                onClick={() => toggleDarkMode()}
+              >
+                {isDarkMode ? <Sun /> : <Moon />}
+              </button>
+              <LanguageSelector
+                options={langs}
+                currentLang={currentLang}
+                onChange={(lang) => setCurrentLang(lang)}
+              />
+            </div>
+          </nav>
+          <Routes>
+            <Route path="/" Component={AboutPage} />
+            <Route path="/projects" Component={ProjectsPage} />
+          </Routes>
+        </Router>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p> */}
-    </>
+    </div>
   );
 }
 
