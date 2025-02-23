@@ -18,6 +18,10 @@ function App() {
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
   };
+  const updateLang = (lang: string) => {
+    i18next.changeLanguage(lang);
+    setCurrentLang(lang);
+  };
   return (
     <div
       className={
@@ -45,7 +49,7 @@ function App() {
               <LanguageSelector
                 options={langs}
                 currentLang={currentLang}
-                onChange={(lang) => setCurrentLang(lang)}
+                onChange={(lang) => updateLang(lang)}
               />
             </div>
           </nav>
