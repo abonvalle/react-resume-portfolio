@@ -6,7 +6,7 @@ function ProjectsPage() {
       <h1>{t("projects", { ns: "translation" })}</h1>
       <h2>{t("intro")}</h2>
       <img
-        src="/images/ngxmaterialthemer.png"
+        src="/images/ngxmaterialthemer.webp"
         alt="Photo"
         width={1125}
         height={750}
@@ -24,7 +24,7 @@ function ProjectsPage() {
       </p>
       <br />
       <img
-        src="/images/nameguessr.png"
+        src="/images/nameguessr.webp"
         alt="Photo"
         width={1125}
         height={750}
@@ -41,7 +41,7 @@ function ProjectsPage() {
       </p>
       <br />
       <img
-        src="/images/devflix.png"
+        src="/images/devflix.webp"
         alt="Photo"
         width={1125}
         height={750}
@@ -57,7 +57,7 @@ function ProjectsPage() {
       </p>
       <br />
       <img
-        src="/images/expateo.png"
+        src="/images/expateo.webp"
         alt="Photo"
         width={1125}
         height={750}
@@ -73,7 +73,7 @@ function ProjectsPage() {
       </p>
       <br />
       <img
-        src="/images/wanao.png"
+        src="/images/wanao.webp"
         alt="Photo"
         width={1125}
         height={750}
@@ -88,7 +88,7 @@ function ProjectsPage() {
       </p>
       <br />
       <img
-        src="/images/radio5.png"
+        src="/images/radio5.webp"
         alt="Photo"
         width={1125}
         height={750}
@@ -103,7 +103,7 @@ function ProjectsPage() {
         <br />
       </p>
       <img
-        src="/images/emmalarragueta.png"
+        src="/images/emmalarragueta.webp"
         alt="Photo"
         width={1125}
         height={750}
@@ -119,7 +119,7 @@ function ProjectsPage() {
       </p>
       <br />
       <img
-        src="/images/oliviertaylor.png"
+        src="/images/oliviertaylor.webp"
         alt="Photo"
         width={1125}
         height={750}
@@ -135,7 +135,7 @@ function ProjectsPage() {
       </p>
       <br />
       <img
-        src="/images/sitesvitrines.png"
+        src="/images/sitesvitrines.webp"
         alt="Photo"
         width={1125}
         height={750}

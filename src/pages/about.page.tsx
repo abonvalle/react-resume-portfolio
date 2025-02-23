@@ -7,7 +7,7 @@ function AboutPage() {
       <h1>{t("about", { ns: "translation" })}</h1>
       <h2>🖖 {t("intro.welcome")}</h2>
       <img
-        src="/images/pp.png"
+        src="/images/pp.webp"
         className="rounded-full"
         alt="Photo"
         width={128}
@@ -105,15 +105,15 @@ function AboutPage() {
       <Carousel
         images={[
           {
-            url: "/images/DevflixP.png",
+            url: "/images/DevflixP.webp",
             alt: "Devflix portfolio",
           },
           {
-            url: "/images/Name Guessr.png",
+            url: "/images/Name Guessr.webp",
             alt: "Charactdle sideproject",
           },
           {
-            url: "/images/RadioFIVE.png",
+            url: "/images/RadioFIVE.webp",
             alt: "Radio5 sideproject",
           },
         ]}
@@ -159,7 +159,7 @@ function AboutPage() {
 - Intelligence artificielle - Stuart Russell & Peter Norvig
 - Quand la machine apprend - Yann Le Cun */}
       {/* {
-        url: '/images/ddd.jpg',
+        url: '/images/ddd.webp',
         title: 'Domain Driven Design',
         author: 'Eric Evans',
         txt: `Concevoir un logiciel de qualité exige des équipes non seulement une expertise technique solide, mais aussi une compréhension approfondie du métier.`,
@@ -168,21 +168,21 @@ function AboutPage() {
       <Bookshelf
         images={[
           {
-            url: "/images/clean_architecture.jpg",
+            url: "/images/clean_architecture.webp",
             alt: `${t("book_clean_architecture_title")} book cover`,
             title: t("book_clean_architecture_title"),
             author: "Robert C. Martin",
             txt: t("book_clean_architecture_txt"),
           },
           {
-            url: "/images/ia_mm.jpg",
+            url: "/images/ia_mm.webp",
             title: t("book_artificial_intelligence_title"),
             author: "Melanie Mitchell",
             txt: t("book_artificial_intelligence_txt"),
             alt: `${t("book_artificial_intelligence_title")} book cover`,
           },
           {
-            url: "/images/ddd.jpg",
+            url: "/images/ddd.webp",
             title: t("book_ddd_title"),
             author: "Eric Evans",
             txt: t("book_ddd_text"),
