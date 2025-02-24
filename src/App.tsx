@@ -44,6 +44,7 @@ function App() {
             <div className="flex justify-center items-center gap-2">
               <button
                 className="cursor-pointer"
+                aria-label="dark mode toggle button"
                 onClick={() => toggleDarkMode()}
               >
                 {isDarkMode ? <Sun /> : <Moon />}

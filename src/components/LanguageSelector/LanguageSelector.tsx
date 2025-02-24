@@ -26,6 +26,7 @@ const LanguageSelector = ({
   return (
     <div className="relative inline-block text-left">
       <button
+        aria-label="lang selection button"
         className="inline-flex justify-center w-full p-1 text-xl rounded-md font-medium text-gray-700 focus:outline-none cursor-pointer"
         onClick={() => setIsOpen((prev) => !prev)}
       >
@@ -40,6 +41,7 @@ const LanguageSelector = ({
               .map((option) => (
                 <button
                   key={option.code}
+                  aria-label={option.code + " selection button"}
                   onClick={() => handleLangChange(option.code)}
                   className={`block w-full text-left text-xl text-gray-700 cursor-pointer`}
                 >
