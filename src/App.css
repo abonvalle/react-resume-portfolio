@@ -44,21 +44,30 @@ div.content {
   padding: 2em;
 }
 
-.read-the-docs {
-  color: #888;
+nav a {
+  border-color: transparent;
+  margin-bottom: 4px;
+  text-decoration: none;
+  transition: border-color 0.25s ease-in-out, padding 0.25s ease-in-out,
+    margin 0.25s ease-in-out;
+}
+a {
+  text-decoration: underline;
+}
+.prose-light a:hover {
+  color: #1b6fb4;
+}
+.prose-dark a:hover {
+  color: #4593d3;
 }
 
-nav a {
-  color: #f3f4f6;
-  transition: color 0.2s ease-in-out;
-}
-.prose-light nav a {
-  color: #1c1b22;
-}
 .prose-lg {
   transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
 }
 
 nav a.active {
-  text-decoration: underline;
+  border-color: inherit;
+  padding-bottom: 4px;
+  margin-bottom: 0px;
+  border-bottom: 1px solid;
 }
