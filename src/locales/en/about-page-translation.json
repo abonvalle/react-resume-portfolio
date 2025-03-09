@@ -1,7 +1,7 @@
 {
   "intro": {
     "welcome": "Welcome to my portfolio!",
-    "introduction": "I am a seasoned Software Developer with over {{number}} of hands-on experience across industries as diverse as HR Tech. and Health Tech.<br/><br/>Over the years, I have acquired in-depth expertise in the design and maintenance of complex systems, as well as in the creation of dynamic user interfaces.",
+    "introduction": "I am a seasoned Software Developer with over {{number}} of hands-on experience across industries as diverse as HR Tech. and Healthcare.<br/><br/>Over the years, I have acquired in-depth expertise in the design and maintenance of complex systems, as well as in the creation of dynamic user interfaces.",
     "subsection": "Key Skills and Interests:",
     "software_architecture": "<strong>Software architecture:</strong> Passionate about designing software architectures that are not only scalable and efficient but also adhere to best practices and industry standards. I focus on creating modular and reusable code that facilitates easy maintenance and future enhancements.",
     "frontend_development": "<strong>Front-end development:</strong> Proficient in creating complex, interactive and animated user interfaces using modern frameworks like Angular and React.",
