@@ -5,6 +5,12 @@
 #root {
   height: 100dvh;
   width: 100dvw;
+  overflow: hidden;
+}
+.wrapper {
+  height: 100dvh;
+  width: 100dvw;
+  overflow: auto;
 }
 div.content {
   max-width: 820px;
