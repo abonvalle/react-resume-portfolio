@@ -5,14 +5,7 @@ function AboutPage() {
   return (
     <div className="">
       <h1>{t("about", { ns: "translation" })}</h1>
-      <h2>{t("intro.welcome")} 🖖</h2>
-      <img
-        src="/images/pp.webp"
-        className="rounded-full"
-        alt="Photo"
-        width={128}
-        height={128}
-      />
+      <h2>{t("intro.welcome")}</h2>
       <p>
         <Trans
           t={t}

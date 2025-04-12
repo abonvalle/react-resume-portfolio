@@ -35,13 +35,7 @@
   font-feature-settings: "case" 1, "cpsp" 1, "dlig" 1, "cv01" 1, "cv02",
     "cv03" 1, "cv04" 1;
   font-variant: common-ligatures contextual;
-  /* line-height: 1.5; */
 
-  /* color-scheme: light dark; */
-  /* color: rgb(209, 213, 219); */
-  /* background-color: 1c1b22; */
-
-  /* font-synthesis: none; */
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -54,93 +48,4 @@ body {
   place-items: center;
   align-items: center;
   min-height: 100vh;
-  /* padding: 0 1rem; */
-}
-
-/* h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-h2 {
-  font-size: 2.8em;
-  line-height: 1;
-}
-
-h3 {
-  font-size: 2.4em;
-  line-height: 0.8;
-} */
-
-/* body {
-  font-size: 18px;
-  line-height: 1.6;
-} */
-
-/* h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  line-height: 1.2;
-  margin-bottom: 16px;
-}
-
-h1 {
-  font-size: 32px;
-  font-weight: 700;
-}
-h2 {
-  font-size: 28px;
-  font-weight: 600;
-}
-h3 {
-  font-size: 24px;
-  font-weight: 600;
-}
-h4 {
-  font-size: 20px;
-  font-weight: 600;
-}
-h5 {
-  font-size: 18px;
-  font-weight: 600;
-}
-h6 {
-  font-size: 16px;
-  font-weight: 600;
-} */
-/* 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-} */
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
